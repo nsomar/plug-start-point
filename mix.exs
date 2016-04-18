@@ -1,4 +1,4 @@
-defmodule PlugTest.Mixfile do
+defmodule Sample.Mixfile do
   use Mix.Project
 
   def project do
