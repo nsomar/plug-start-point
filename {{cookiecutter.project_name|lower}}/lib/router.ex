@@ -1,9 +1,9 @@
-defmodule Sample.Router do
+defmodule {{cookiecutter.elixir_mod_name}}.Router do
   use Plug.Router
 
   plug Plug.Logger, level: :info
 
-  # plug Sample.Plug
+  # plug {{cookiecutter.elixir_mod_name}}.Plug
 
   plug :match
   plug :dispatch

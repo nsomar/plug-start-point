@@ -1,4 +1,4 @@
-defmodule Sample.Plug do
+defmodule {{cookiecutter.elixir_mod_name}}.Plug do
   import Plug.Conn
 
   def init(opt), do: opt

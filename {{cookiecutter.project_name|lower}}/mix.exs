@@ -1,10 +1,10 @@
-defmodule Sample.Mixfile do
+defmodule {{cookiecutter.elixir_mod_name}}.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :plug_sample,
-     version: "0.0.1",
-     elixir: "~> 1.2",
+    [app: :{{ cookiecutter.project_name|lower|replace(' ', '-') }},
+     version: "{{cookiecutter.project_version}}",
+     elixir: "~> {{cookiecutter.elixir_version}}",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -12,8 +12,7 @@ defmodule Sample.Mixfile do
 
   def application do
     [applications: [:logger, :plug, :cowboy],
-     env: [server_port: 8080],
-     mod: {Sample.Server, []}]
+     mod: { {{cookiecutter.elixir_mod_name}}.Server, []}]
   end
 
   defp deps do

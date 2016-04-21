@@ -1,0 +1,8 @@
+{
+  "project_name": "plug_sample",
+  "elixir_mod_name": "{{ cookiecutter.project_name|replace('_', ' ')|title|replace(' ', '')}}",
+  "project_description": "Minimal Plug server sample.",
+  "project_version": "0.0.1",
+  "elixir_version": 1.2,
+  "default_plug_port": 8080
+}
