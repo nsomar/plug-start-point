@@ -1,20 +1,35 @@
-# PlugTest
+# Plug Start Point
 
-**TODO: Add description**
+Plug Start Point is a [cookiecutter](https://github.com/audreyr/cookiecutter) template project.
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Install `cookiecutter` if you dont have it.
 
-  1. Add plug_test to your list of dependencies in `mix.exs`:
+Using brew
+```
+brew install cookiecutter
+```
 
-        def deps do
-          [{:plug_test, "~> 0.0.1"}]
-        end
+Download Plug Start Point
+```
+cookiecutter https://github.com/oarrabi/plug-start-point
+```
 
-  2. Ensure plug_test is started before your application:
+Thats it, you are done
 
-        def application do
-          [applications: [:plug_test]]
-        end
+---
 
+## Using the template project
+
+To run the project
+```
+mix deps.get
+mix deps.compile
+mix run --no-halt
+```
+
+To run tests
+```
+mix test
+```
