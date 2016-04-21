@@ -13,7 +13,7 @@ brew install cookiecutter
 
 Download Plug Start Point
 ```
-cookiecutter https://github.com/oarrabi/plug-start-point
+cookiecutter https://github.com/oarrabi/plug-start-point.git
 ```
 
 Thats it, you are done
